@@ -1,0 +1,2774 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+p {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<p id="bemo"></p>
+<p id="demo"></p>
+<p id="nemo"></p>
+
+
+<script>
+// Set the date we're counting down to
+//var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+  var begin = new Date().getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+  var distance = now;
+  var results = [{
+			"alternatives": [{
+				"words": [{
+						"startTime": {
+							"seconds": "0",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "1",
+							"nanos": 900000000
+						},
+						"word": "unhelpful",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "1",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "2",
+							"nanos": 500000000
+						},
+						"word": "friends",
+						"speakerTag": 0
+					}
+				],
+				"transcript": "unhelpful friends",
+				"confidence": 0.9257362484931946
+			}],
+			"channelTag": 0
+		},
+		{
+			"alternatives": [{
+				"words": [{
+						"startTime": {
+							"seconds": "3",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "4",
+							"nanos": 200000000
+						},
+						"word": "funny",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "4",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "4",
+							"nanos": 800000000
+						},
+						"word": "Robin",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "4",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "5",
+							"nanos": 200000000
+						},
+						"word": "dipping",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "5",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "5",
+							"nanos": 400000000
+						},
+						"word": "a",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "5",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "5",
+							"nanos": 900000000
+						},
+						"word": "force",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "5",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "6",
+							"nanos": 700000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "6",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "6",
+							"nanos": 900000000
+						},
+						"word": "had",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "6",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "7",
+							"nanos": 200000000
+						},
+						"word": "many",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "7",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "7",
+							"nanos": 500000000
+						},
+						"word": "friends",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "7",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "8",
+							"nanos": 600000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "8",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "8",
+							"nanos": 900000000
+						},
+						"word": "was",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "8",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "9",
+							"nanos": 300000000
+						},
+						"word": "proud",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "9",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "9",
+							"nanos": 300000000
+						},
+						"word": "of",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "9",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "9",
+							"nanos": 600000000
+						},
+						"word": "his",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "9",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "10",
+							"nanos": 200000000
+						},
+						"word": "friends",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "10",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "11",
+							"nanos": 100000000
+						},
+						"word": "one",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "11",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "11",
+							"nanos": 200000000
+						},
+						"word": "day",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "11",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "11",
+							"nanos": 800000000
+						},
+						"word": "bunny",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "11",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "12",
+							"nanos": 200000000
+						},
+						"word": "rabbit",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "12",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "12",
+							"nanos": 500000000
+						},
+						"word": "heard",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "12",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "12",
+							"nanos": 600000000
+						},
+						"word": "that",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "12",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "13",
+							"nanos": 200000000
+						},
+						"word": "loud",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "13",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "13",
+							"nanos": 600000000
+						},
+						"word": "barking",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "13",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "13",
+							"nanos": 800000000
+						},
+						"word": "of",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "13",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "14",
+							"nanos": 0
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "14",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "14",
+							"nanos": 600000000
+						},
+						"word": "wild",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "14",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "15",
+							"nanos": 0
+						},
+						"word": "dogs",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "15",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "15",
+							"nanos": 800000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "15",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "16",
+							"nanos": 0
+						},
+						"word": "was",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "16",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "16",
+							"nanos": 400000000
+						},
+						"word": "very",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "16",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "17",
+							"nanos": 100000000
+						},
+						"word": "scared",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "17",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "17",
+							"nanos": 800000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "17",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "18",
+							"nanos": 800000000
+						},
+						"word": "decide",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "18",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "18",
+							"nanos": 900000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "18",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "19",
+							"nanos": 400000000
+						},
+						"word": "ask",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "19",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "19",
+							"nanos": 800000000
+						},
+						"word": "for",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "19",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "19",
+							"nanos": 900000000
+						},
+						"word": "help",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "19",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "21",
+							"nanos": 400000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "21",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "21",
+							"nanos": 700000000
+						},
+						"word": "quickly",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "21",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "22",
+							"nanos": 100000000
+						},
+						"word": "went",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "22",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "22",
+							"nanos": 400000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "22",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "22",
+							"nanos": 600000000
+						},
+						"word": "his",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "22",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "23",
+							"nanos": 0
+						},
+						"word": "friend",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "23",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "23",
+							"nanos": 300000000
+						},
+						"word": "dear",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "23",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "24",
+							"nanos": 100000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "24",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "24",
+							"nanos": 300000000
+						},
+						"word": "said",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "24",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "25",
+							"nanos": 100000000
+						},
+						"word": "different",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "25",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "25",
+							"nanos": 800000000
+						},
+						"word": "some",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "25",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "26",
+							"nanos": 200000000
+						},
+						"word": "well",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "26",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "26",
+							"nanos": 500000000
+						},
+						"word": "don't",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "26",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "26",
+							"nanos": 600000000
+						},
+						"word": "go",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "26",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "27",
+							"nanos": 100000000
+						},
+						"word": "chasing",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "27",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "27",
+							"nanos": 300000000
+						},
+						"word": "me",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "27",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "27",
+							"nanos": 900000000
+						},
+						"word": "can",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "27",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "28",
+							"nanos": 0
+						},
+						"word": "you",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "28",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "28",
+							"nanos": 500000000
+						},
+						"word": "chase",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "28",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "28",
+							"nanos": 800000000
+						},
+						"word": "them",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "28",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "29",
+							"nanos": 0
+						},
+						"word": "away",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "29",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "29",
+							"nanos": 500000000
+						},
+						"word": "with",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "29",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "29",
+							"nanos": 600000000
+						},
+						"word": "your",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "29",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "30",
+							"nanos": 200000000
+						},
+						"word": "shot",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "30",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "32",
+							"nanos": 200000000
+						},
+						"word": "painters",
+						"speakerTag": 0
+					}
+				],
+				"transcript": " funny Robin dipping a force he had many friends he was proud of his friends one day bunny rabbit heard that loud barking of the wild dogs he was very scared he decide to ask for help he quickly went to his friend dear he said different some well don't go chasing me can you chase them away with your shot painters",
+				"confidence": 0.9397432208061218
+			}],
+			"channelTag": 0
+		},
+		{
+			"alternatives": [{
+				"words": [{
+						"startTime": {
+							"seconds": "33",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "33",
+							"nanos": 600000000
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "33",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "33",
+							"nanos": 900000000
+						},
+						"word": "deer",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "33",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "34",
+							"nanos": 100000000
+						},
+						"word": "say",
+						"speakerTag": 0
+					}
+				],
+				"transcript": " the deer say",
+				"confidence": 0.9326835870742798
+			}],
+			"channelTag": 0
+		},
+		{
+			"alternatives": [{
+				"words": [{
+						"startTime": {
+							"seconds": "35",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "35",
+							"nanos": 700000000
+						},
+						"word": "nice",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "35",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "36",
+							"nanos": 100000000
+						},
+						"word": "right",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "36",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "36",
+							"nanos": 300000000
+						},
+						"word": "I",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "36",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "36",
+							"nanos": 700000000
+						},
+						"word": "can",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "36",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "37",
+							"nanos": 500000000
+						},
+						"word": "but",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "37",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "37",
+							"nanos": 600000000
+						},
+						"word": "now",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "37",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "38",
+							"nanos": 0
+						},
+						"word": "I'm",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "38",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "38",
+							"nanos": 200000000
+						},
+						"word": "busy",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "38",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "39",
+							"nanos": 0
+						},
+						"word": "why",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "39",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "39",
+							"nanos": 200000000
+						},
+						"word": "don't",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "39",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "39",
+							"nanos": 300000000
+						},
+						"word": "you",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "39",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "39",
+							"nanos": 700000000
+						},
+						"word": "ask",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "39",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "40",
+							"nanos": 400000000
+						},
+						"word": "bear",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "40",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "40",
+							"nanos": 600000000
+						},
+						"word": "for",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "40",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "41",
+							"nanos": 0
+						},
+						"word": "help",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "41",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "42",
+							"nanos": 200000000
+						},
+						"word": "bunny",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "42",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "42",
+							"nanos": 700000000
+						},
+						"word": "rabbit",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "42",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "43",
+							"nanos": 0
+						},
+						"word": "run",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "43",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "43",
+							"nanos": 300000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "43",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "43",
+							"nanos": 500000000
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "43",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "43",
+							"nanos": 800000000
+						},
+						"word": "bear",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "43",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "44",
+							"nanos": 500000000
+						},
+						"word": "my",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "44",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "44",
+							"nanos": 800000000
+						},
+						"word": "dear",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "44",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "45",
+							"nanos": 200000000
+						},
+						"word": "friend",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "45",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "45",
+							"nanos": 800000000
+						},
+						"word": "you",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "45",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "46",
+							"nanos": 0
+						},
+						"word": "are",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "46",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "46",
+							"nanos": 400000000
+						},
+						"word": "very",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "46",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "47",
+							"nanos": 0
+						},
+						"word": "strong",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "47",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "47",
+							"nanos": 900000000
+						},
+						"word": "can",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "47",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "48",
+							"nanos": 0
+						},
+						"word": "you",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "48",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "48",
+							"nanos": 300000000
+						},
+						"word": "help",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "48",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "48",
+							"nanos": 500000000
+						},
+						"word": "me",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "48",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "48",
+							"nanos": 800000000
+						},
+						"word": "Chase",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "48",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "49",
+							"nanos": 700000000
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "49",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "50",
+							"nanos": 200000000
+						},
+						"word": "wild",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "50",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "50",
+							"nanos": 500000000
+						},
+						"word": "dog",
+						"speakerTag": 0
+					}
+				],
+				"transcript": " nice right I can but now I'm busy why don't you ask bear for help bunny rabbit run to the bear my dear friend you are very strong can you help me Chase the wild dog",
+				"confidence": 0.9344494938850403
+			}],
+			"channelTag": 0
+		},
+		{
+			"alternatives": [{
+				"words": [{
+						"startTime": {
+							"seconds": "52",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "52",
+							"nanos": 800000000
+						},
+						"word": "please",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "52",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "53",
+							"nanos": 200000000
+						},
+						"word": "chase",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "53",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "53",
+							"nanos": 400000000
+						},
+						"word": "them",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "53",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "53",
+							"nanos": 600000000
+						},
+						"word": "away",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "53",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "54",
+							"nanos": 400000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "54",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "54",
+							"nanos": 900000000
+						},
+						"word": "requests",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "54",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "55",
+							"nanos": 100000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "55",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "55",
+							"nanos": 200000000
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "55",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "55",
+							"nanos": 600000000
+						},
+						"word": "bear",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "55",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "56",
+							"nanos": 200000000
+						},
+						"word": "that",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "56",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "56",
+							"nanos": 400000000
+						},
+						"word": "they",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "56",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "56",
+							"nanos": 500000000
+						},
+						"word": "are",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "56",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "56",
+							"nanos": 900000000
+						},
+						"word": "reply",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "56",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "57",
+							"nanos": 300000000
+						},
+						"word": "I'm",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "57",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "57",
+							"nanos": 800000000
+						},
+						"word": "sorry",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "57",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "58",
+							"nanos": 100000000
+						},
+						"word": "I'm",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "58",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "58",
+							"nanos": 300000000
+						},
+						"word": "hungry",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "58",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "58",
+							"nanos": 700000000
+						},
+						"word": "and",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "58",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "58",
+							"nanos": 800000000
+						},
+						"word": "tired",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "58",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "59",
+							"nanos": 800000000
+						},
+						"word": "I",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "59",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "59",
+							"nanos": 900000000
+						},
+						"word": "need",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "59",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "60",
+							"nanos": 200000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "60",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "60",
+							"nanos": 600000000
+						},
+						"word": "find",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "60",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "60",
+							"nanos": 800000000
+						},
+						"word": "some",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "60",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "61",
+							"nanos": 300000000
+						},
+						"word": "food",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "61",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "62",
+							"nanos": 0
+						},
+						"word": "can",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "62",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "62",
+							"nanos": 200000000
+						},
+						"word": "you",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "62",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "62",
+							"nanos": 600000000
+						},
+						"word": "ask",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "62",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "62",
+							"nanos": 800000000
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "62",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "63",
+							"nanos": 200000000
+						},
+						"word": "monkey",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "63",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "63",
+							"nanos": 400000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "63",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "63",
+							"nanos": 900000000
+						},
+						"word": "help",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "63",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "65",
+							"nanos": 0
+						},
+						"word": "cool",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "65",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "65",
+							"nanos": 400000000
+						},
+						"word": "bunny",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "65",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "65",
+							"nanos": 700000000
+						},
+						"word": "went",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "65",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "65",
+							"nanos": 900000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "65",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "66",
+							"nanos": 0
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "66",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "66",
+							"nanos": 500000000
+						},
+						"word": "monkey",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "66",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "67",
+							"nanos": 300000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "67",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "67",
+							"nanos": 400000000
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "67",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "68",
+							"nanos": 100000000
+						},
+						"word": "elephant",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "68",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "68",
+							"nanos": 500000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "68",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "68",
+							"nanos": 700000000
+						},
+						"word": "look",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "68",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "69",
+							"nanos": 100000000
+						},
+						"word": "out",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "69",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "69",
+							"nanos": 700000000
+						},
+						"word": "into",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "69",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "70",
+							"nanos": 100000000
+						},
+						"word": "all",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "70",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "70",
+							"nanos": 400000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "70",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "70",
+							"nanos": 700000000
+						},
+						"word": "saw",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "70",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "70",
+							"nanos": 900000000
+						},
+						"word": "their",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "70",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "71",
+							"nanos": 400000000
+						},
+						"word": "friends",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "71",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "72",
+							"nanos": 100000000
+						},
+						"word": "on",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "72",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "72",
+							"nanos": 300000000
+						},
+						"word": "this",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "72",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "72",
+							"nanos": 600000000
+						},
+						"word": "feel",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "72",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "73",
+							"nanos": 100000000
+						},
+						"word": "sad",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "73",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "73",
+							"nanos": 200000000
+						},
+						"word": "that",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "73",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "73",
+							"nanos": 600000000
+						},
+						"word": "nobody",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "73",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "74",
+							"nanos": 100000000
+						},
+						"word": "was",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "74",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "74",
+							"nanos": 400000000
+						},
+						"word": "ready",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "74",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "74",
+							"nanos": 800000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "74",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "75",
+							"nanos": 100000000
+						},
+						"word": "help",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "75",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "75",
+							"nanos": 400000000
+						},
+						"word": "him",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "75",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "76",
+							"nanos": 200000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "76",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "76",
+							"nanos": 700000000
+						},
+						"word": "understood",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "76",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "76",
+							"nanos": 800000000
+						},
+						"word": "that",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "76",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "77",
+							"nanos": 200000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "77",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "77",
+							"nanos": 400000000
+						},
+						"word": "had",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "77",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "77",
+							"nanos": 700000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "77",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "77",
+							"nanos": 900000000
+						},
+						"word": "think",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "77",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "78",
+							"nanos": 100000000
+						},
+						"word": "of",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "78",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "78",
+							"nanos": 200000000
+						},
+						"word": "a",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "78",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "78",
+							"nanos": 200000000
+						},
+						"word": "way",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "78",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "79",
+							"nanos": 100000000
+						},
+						"word": "out",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "79",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "79",
+							"nanos": 200000000
+						},
+						"word": "for",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "79",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "79",
+							"nanos": 600000000
+						},
+						"word": "himself",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "79",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "80",
+							"nanos": 900000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "80",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "81",
+							"nanos": 200000000
+						},
+						"word": "High",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "81",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "81",
+							"nanos": 600000000
+						},
+						"word": "under",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "81",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "81",
+							"nanos": 700000000
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "81",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "82",
+							"nanos": 100000000
+						},
+						"word": "push",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "82",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "82",
+							"nanos": 800000000
+						},
+						"word": "he",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "82",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "83",
+							"nanos": 100000000
+						},
+						"word": "lay",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "83",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "83",
+							"nanos": 500000000
+						},
+						"word": "very",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "83",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "83",
+							"nanos": 800000000
+						},
+						"word": "still",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "83",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "85",
+							"nanos": 200000000
+						},
+						"word": "and",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "85",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "85",
+							"nanos": 400000000
+						},
+						"word": "why",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "85",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "85",
+							"nanos": 500000000
+						},
+						"word": "I'll",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "85",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "85",
+							"nanos": 800000000
+						},
+						"word": "talk",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "85",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "85",
+							"nanos": 900000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "85",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "86",
+							"nanos": 0
+						},
+						"word": "you",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "86",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "86",
+							"nanos": 200000000
+						},
+						"word": "not",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "86",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "86",
+							"nanos": 500000000
+						},
+						"word": "find",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "86",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "86",
+							"nanos": 700000000
+						},
+						"word": "it",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "86",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "87",
+							"nanos": 0
+						},
+						"word": "funny",
+						"speakerTag": 0
+					}
+				],
+				"transcript": " please chase them away he requests to the bear that they are reply I'm sorry I'm hungry and tired I need to find some food can you ask the monkey to help cool bunny went to the monkey to the elephant to look out into all he saw their friends on this feel sad that nobody was ready to help him he understood that he had to think of a way out for himself he High under the push he lay very still and why I'll talk to you not find it funny",
+				"confidence": 0.9545449614524841
+			}],
+			"channelTag": 0
+		},
+		{
+			"alternatives": [{
+				"words": [{
+						"startTime": {
+							"seconds": "87",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "88",
+							"nanos": 300000000
+						},
+						"word": "play",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "88",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "88",
+							"nanos": 900000000
+						},
+						"word": "when",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "88",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "89",
+							"nanos": 400000000
+						},
+						"word": "chasing",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "89",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "90",
+							"nanos": 0
+						},
+						"word": "Olive",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "90",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "90",
+							"nanos": 300000000
+						},
+						"word": "and",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "90",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "90",
+							"nanos": 500000000
+						},
+						"word": "the",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "90",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "90",
+							"nanos": 900000000
+						},
+						"word": "most",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "90",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "91",
+							"nanos": 700000000
+						},
+						"word": "bunny",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "91",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "92",
+							"nanos": 200000000
+						},
+						"word": "rabbit",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "92",
+							"nanos": 200000000
+						},
+						"endTime": {
+							"seconds": "92",
+							"nanos": 700000000
+						},
+						"word": "Linda",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "92",
+							"nanos": 700000000
+						},
+						"endTime": {
+							"seconds": "93",
+							"nanos": 100000000
+						},
+						"word": "you",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "93",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "93",
+							"nanos": 300000000
+						},
+						"word": "have",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "93",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "93",
+							"nanos": 400000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "93",
+							"nanos": 400000000
+						},
+						"endTime": {
+							"seconds": "93",
+							"nanos": 600000000
+						},
+						"word": "learn",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "93",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "93",
+							"nanos": 900000000
+						},
+						"word": "to",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "93",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "94",
+							"nanos": 300000000
+						},
+						"word": "survive",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "94",
+							"nanos": 300000000
+						},
+						"endTime": {
+							"seconds": "94",
+							"nanos": 500000000
+						},
+						"word": "by",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "94",
+							"nanos": 500000000
+						},
+						"endTime": {
+							"seconds": "95",
+							"nanos": 0
+						},
+						"word": "himself",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "95",
+							"nanos": 0
+						},
+						"endTime": {
+							"seconds": "95",
+							"nanos": 800000000
+						},
+						"word": "but",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "95",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "96",
+							"nanos": 100000000
+						},
+						"word": "not",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "96",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "96",
+							"nanos": 600000000
+						},
+						"word": "depending",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "96",
+							"nanos": 600000000
+						},
+						"endTime": {
+							"seconds": "96",
+							"nanos": 800000000
+						},
+						"word": "on",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "96",
+							"nanos": 800000000
+						},
+						"endTime": {
+							"seconds": "97",
+							"nanos": 100000000
+						},
+						"word": "his",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "97",
+							"nanos": 100000000
+						},
+						"endTime": {
+							"seconds": "97",
+							"nanos": 900000000
+						},
+						"word": "helpful",
+						"speakerTag": 0
+					},
+					{
+						"startTime": {
+							"seconds": "97",
+							"nanos": 900000000
+						},
+						"endTime": {
+							"seconds": "98",
+							"nanos": 500000000
+						},
+						"word": "friends",
+						"speakerTag": 0
+					}
+				],
+				"transcript": " play when chasing Olive and the most bunny rabbit Linda you have to learn to survive by himself but not depending on his helpful friends",
+				"confidence": 0.8667123317718506
+			}],
+			"channelTag": 0
+		}
+	];   
+  	var alltrans = "";
+	results.forEach(result => {
+      var outp = JSON.stringify( result, null, 4);
+      console.log(outp);
+      console.log("llalallllalla");
+      console.log('Transcription: ', result.alternatives[0].transcript);
+      alltrans += result.alternatives[0].transcript;
+      document.getElementById("demo").innerHTML =  alltrans;
+      result.alternatives[0].words.forEach(wordInfo => {
+        // NOTE: If you have a time offset exceeding 2^32 seconds, use the
+        // wordInfo.{x}Time.seconds.high to calculate seconds.
+        var wtime = wordInfo.startTime.seconds*1000 + wordInfo.startTime.nanos / 1000000;
+        var diff = begin + wtime;
+        document.getElementById("nemo").innerHTML= "diff : " + diff + "<br/> begin : " + begin ;
+        if (diff <= now){ 
+        //$("p:contains("+wordInfo.word+")").css("background-color", "yellow");
+          document.getElementById("bemo").innerHTML =  wordInfo.word + "<br/> wtime " + wtime;;
+        };
+
+        const startSecs =
+          `${wordInfo.startTime.seconds}` +
+          '.' +
+          wordInfo.startTime.nanos / 100000000;
+        const endSecs =
+          `${wordInfo.endTime.seconds}` +
+          '.' +
+          wordInfo.endTime.nanos / 100000000;
+        console.log(`Word: ${wordInfo.word}`);
+        console.log(`\t ${startSecs} secs - ${endSecs} secs`);
+      });
+    });
+    //document.getElementById("demo").innerHTML = now;
+  // Output the result in an element with id="demo"
+  /*
+  
+    document.getElementById("demo").innerHTML = now;
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }*/
+}, 1000);
+</script>
+
+</body>
+</html>
