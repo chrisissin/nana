@@ -2771,7 +2771,9 @@ var x = setInterval(function() {
         	if (diff <= now){ 
 		        document.getElementById("bemo").innerHTML =  wordInfo.word + "<br/> wtime " + wtime;
 			document.getElementById(wtime).style.backgroundColor = "yellow";
-			document.getElementById(lastdom).style.backgroundColor = "white";			
+			if(document.getElementById(lastdom)){
+				document.getElementById(lastdom).style.backgroundColor = "white";			
+			}
 			lastdom = wtime
 	        };
 
