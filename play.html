@@ -2756,9 +2756,9 @@ p {
 var x = setInterval(function() {
 
   // Get today's date and time
-  var now = new Date().getTime();
-  var distance = now;
-
+	var now = new Date().getTime();
+  	var distance = now;
+	var lastdom;
 	results.forEach(result => {
       		var outp = JSON.stringify( result, null, 4);
 	        result.alternatives[0].words.forEach(wordInfo => {
@@ -2770,7 +2770,9 @@ var x = setInterval(function() {
 	        document.getElementById("nemo").innerHTML= "diff : " + diff + "<br/> begin : " + begin ;
         	if (diff <= now){ 
 		        document.getElementById("bemo").innerHTML =  wordInfo.word + "<br/> wtime " + wtime;
-			document.getElementById(wtime).style.color = "yellow";
+			document.getElementById(wtime).style.backgroundColor = "yellow";
+			document.getElementById(lastdom).style.backgroundColor = "white";			
+			lastdom = wtime
 	        };
 
 		const startSecs =
