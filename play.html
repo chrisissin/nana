@@ -2737,12 +2737,7 @@ p {
 	var newword = "<div id='"+wtime+"'>"+wordInfo.word+"</div>";
 	thetranslist += newword;
         document.getElementById("nemo").innerHTML= "diff : " + diff + "<br/> begin : " + begin ;
-	      /*
-        if (diff <= now){ 
-        //$("p:contains("+wordInfo.word+")").css("background-color", "yellow");
-          document.getElementById("bemo").innerHTML =  wordInfo.word + "<br/> wtime " + wtime;;
-        };
-*/
+
         const startSecs =
           `${wordInfo.startTime.seconds}` +
           '.' +
