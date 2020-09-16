@@ -2734,7 +2734,7 @@ p {
         // wordInfo.{x}Time.seconds.high to calculate seconds.
         var wtime = wordInfo.startTime.seconds*1000 + wordInfo.startTime.nanos / 1000000;
         var diff = begin + wtime;
-	var newword = "<div id='"+wtime+"'>"+wordInfo.word+"</div>";
+	var newword = "<span id='"+wtime+"'>"+wordInfo.word+"</span>";
 	thetranslist += newword;
         document.getElementById("nemo").innerHTML= "diff : " + diff + "<br/> begin : " + begin ;
 
