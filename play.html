@@ -19,13 +19,6 @@ p {
 <script>
 // Set the date we're counting down to
 //var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-  var begin = new Date().getTime();
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-  var distance = now;
   var results = [{
 			"alternatives": [{
 				"words": [{
@@ -2760,8 +2753,41 @@ var x = setInterval(function() {
         console.log(`Word: ${wordInfo.word}`);
         console.log(`\t ${startSecs} secs - ${endSecs} secs`);
       });
-    });
-	document.getElementById("vemo").innerHTML = thetranslist;
+    });	
+	document.getElementById("vemo").innerHTML = thetranslist;	
+  var begin = new Date().getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+  var distance = now;
+
+	results.forEach(result => {
+      		var outp = JSON.stringify( result, null, 4);
+	        result.alternatives[0].words.forEach(wordInfo => {
+        // NOTE: If you have a time offset exceeding 2^32 seconds, use the
+        // wordInfo.{x}Time.seconds.high to calculate seconds.
+        	var wtime = wordInfo.startTime.seconds*1000 + wordInfo.startTime.nanos / 1000000;
+	        var diff = begin + wtime;
+		
+	        document.getElementById("nemo").innerHTML= "diff : " + diff + "<br/> begin : " + begin ;
+        	if (diff <= now){ 
+		        document.getElementById("bemo").innerHTML =  wordInfo.word + "<br/> wtime " + wtime;;
+	        };
+
+		const startSecs =
+		  `${wordInfo.startTime.seconds}` +
+		  '.' +
+		  wordInfo.startTime.nanos / 100000000;
+		const endSecs =
+		  `${wordInfo.endTime.seconds}` +
+		  '.' +
+		  wordInfo.endTime.nanos / 100000000;
+		console.log(`Word: ${wordInfo.word}`);
+		console.log(`\t ${startSecs} secs - ${endSecs} secs`);
+      });
+    });	
     //document.getElementById("demo").innerHTML = now;
   // Output the result in an element with id="demo"
   /*
