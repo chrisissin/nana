@@ -2773,7 +2773,8 @@ var x = setInterval(function() {
 		
 	        document.getElementById("nemo").innerHTML= "diff : " + diff + "<br/> begin : " + begin ;
         	if (diff <= now){ 
-		        document.getElementById("bemo").innerHTML =  wordInfo.word + "<br/> wtime " + wtime;;
+		        document.getElementById("bemo").innerHTML =  wordInfo.word + "<br/> wtime " + wtime;
+			document.getElementById(wtime).style.color = "yellow";
 	        };
 
 		const startSecs =
