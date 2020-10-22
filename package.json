@@ -1,0 +1,22 @@
+{
+  "name": "functions",
+  "scripts": {
+
+  },
+  "engines": {
+    "node": "10"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/storage": "^5.0.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "multer": "^1.4.1",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1"
+  },
+  "private": true
+}
